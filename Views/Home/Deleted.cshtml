@@ -1,0 +1,12 @@
+﻿﻿
+@{
+    ViewData["Title"] = "Deleted";
+}
+<form action="/Home/Delete">
+    <label for="fname">Name:</label><br>
+    <input readonly type="text" id="fname" name="Name" value="@Model.Name" /> <br>
+    <label for="lname">Designation:</label><br>
+    <input readonly type="text" id="lname" name="Description" value="@Model.Description"><br><br>
+    <input type="hidden" id="lname" name="Id" value="@Model.Id"><br><br>
+    <input type="submit" value="Submit">
+</form>

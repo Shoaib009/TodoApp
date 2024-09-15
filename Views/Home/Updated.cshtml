@@ -1,0 +1,17 @@
+﻿@model TodoApplication
+@{
+    ViewData["Title"] = "Updated";
+}
+<form action="/Home/Update">
+    <div class="mb-3">
+        <label class="form-label" for="fname">Name:</label>
+        <input class="form-control" required type="text" id="fname" name="Name" value="@Model.Name" /> 
+    </div>
+    <div class="mb-3">
+        <label class="form-label" for="lname">Description:</label>
+        <input class="form-control" required type="text" id="lname" name="Description" value="@Model.Description">
+    </div>
+    <input type="hidden" id="lname" name="Id" value="@Model.Id">
+    <input class="btn btn-primary" type="submit" value="Submit">
+
+</form> 
